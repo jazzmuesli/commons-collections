@@ -235,7 +235,7 @@ public class PredicatedBag_ESTest extends PredicatedBag_ESTest_scaffolding {
       Predicate<Object> predicate0 = InstanceofPredicate.instanceOfPredicate(class0);
       // Undeclared exception!
       try { 
-        PredicatedBag.predicatedBag((Bag<TransformedBag<TransformedSortedBag>>) synchronizedSortedBag0, (Predicate<? super TransformedBag<TransformedSortedBag>>) predicate0);
+        PredicatedBag.predicatedBag((Bag<Object>) synchronizedSortedBag0, (Predicate<Object>) predicate0);
         fail("Expecting exception: IllegalArgumentException");
       
       } catch(IllegalArgumentException e) {

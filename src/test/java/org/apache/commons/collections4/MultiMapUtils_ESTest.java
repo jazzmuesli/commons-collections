@@ -74,7 +74,8 @@ public class MultiMapUtils_ESTest extends MultiMapUtils_ESTest_scaffolding {
       Locale.FilteringMode locale_FilteringMode0 = Locale.FilteringMode.REJECT_EXTENDED_RANGES;
       hashMap0.put(locale_FilteringMode0, (String) null);
       arrayListValuedHashMap0.putAll((Map<?, ? extends String>) hashMap0);
-      MultiValuedMap<Locale.FilteringMode, PredicatedBag<UnmodifiableSortedBag>> multiValuedMap0 = MultiMapUtils.emptyIfNull((MultiValuedMap<Locale.FilteringMode, PredicatedBag<UnmodifiableSortedBag>>) arrayListValuedHashMap0);
+      MultiValuedMap<Object, String> multiValuedMap0= 
+    		  MultiMapUtils.emptyIfNull((MultiValuedMap<Object, String>) arrayListValuedHashMap0);
       assertFalse(multiValuedMap0.isEmpty());
   }
 

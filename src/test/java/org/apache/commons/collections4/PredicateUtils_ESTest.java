@@ -349,7 +349,7 @@ public class PredicateUtils_ESTest extends PredicateUtils_ESTest_scaffolding {
       PredicateUtils.falsePredicate();
       PredicateUtils.equalPredicate((Boolean) null);
       IdentityPredicate<String> identityPredicate0 = (IdentityPredicate<String>) mock(IdentityPredicate.class, new ViolatedAssumptionAnswer());
-      PredicateUtils.equalPredicate((IdentityPredicate<TransformerPredicate>) identityPredicate0);
+      PredicateUtils.equalPredicate((IdentityPredicate<String>) identityPredicate0);
       Predicate<Object> predicate0 = null;
       // Undeclared exception!
       try { 
@@ -448,7 +448,7 @@ public class PredicateUtils_ESTest extends PredicateUtils_ESTest_scaffolding {
       PredicateUtils.orPredicate((Predicate<? super AnyPredicate<NotNullPredicate>>) predicate0, (Predicate<? super AnyPredicate<NotNullPredicate>>) predicate0);
       PredicateUtils.eitherPredicate((Predicate<? super AnyPredicate<IdentityPredicate>>) predicate0, (Predicate<? super AnyPredicate<IdentityPredicate>>) predicate0);
       FalsePredicate<Object> falsePredicate0 = (FalsePredicate<Object>) mock(FalsePredicate.class, new ViolatedAssumptionAnswer());
-      PredicateUtils.identityPredicate((FalsePredicate<NullIsExceptionPredicate>) falsePredicate0);
+      PredicateUtils.identityPredicate((FalsePredicate<Object>) falsePredicate0);
       PredicateUtils.orPredicate((Predicate<? super AnyPredicate<Integer>>) predicate0, (Predicate<? super AnyPredicate<Integer>>) predicate0);
       Predicate<Object>[] predicateArray0 = (Predicate<Object>[]) Array.newInstance(Predicate.class, 2);
       predicateArray0[0] = predicate0;
@@ -608,7 +608,7 @@ public class PredicateUtils_ESTest extends PredicateUtils_ESTest_scaffolding {
       Transformer<Object, Boolean> transformer0 = (Transformer<Object, Boolean>) mock(Transformer.class, new ViolatedAssumptionAnswer());
       PredicateUtils.asPredicate((Transformer<? super ExceptionPredicate<NotPredicate>, Boolean>) transformer0);
       NotNullPredicate<InstanceofPredicate> notNullPredicate0 = (NotNullPredicate<InstanceofPredicate>) mock(NotNullPredicate.class, new ViolatedAssumptionAnswer());
-      PredicateUtils.identityPredicate((NotNullPredicate<NullIsExceptionPredicate>) notNullPredicate0);
+      PredicateUtils.identityPredicate((NotNullPredicate<InstanceofPredicate>) notNullPredicate0);
       PredicateUtils.allPredicate((Predicate<? super AllPredicate<Integer>>[]) predicateArray0);
       PredicateUtils.onePredicate((Predicate<? super ExceptionPredicate<NonePredicate>>[]) predicateArray0);
       PredicateUtils.truePredicate();
@@ -662,7 +662,7 @@ public class PredicateUtils_ESTest extends PredicateUtils_ESTest_scaffolding {
       PredicateUtils.invokerPredicate("", (Class<?>[]) classArray0, (Object[]) classArray0);
       PredicateUtils.truePredicate();
       AnyPredicate<String> anyPredicate0 = (AnyPredicate<String>) mock(AnyPredicate.class, new ViolatedAssumptionAnswer());
-      PredicateUtils.identityPredicate((AnyPredicate<FalsePredicate>) anyPredicate0);
+      PredicateUtils.identityPredicate((AnyPredicate<String>) anyPredicate0);
       PredicateUtils.nullPredicate();
       Predicate<Object>[] predicateArray0 = null;
       // Undeclared exception!
@@ -734,7 +734,7 @@ public class PredicateUtils_ESTest extends PredicateUtils_ESTest_scaffolding {
       predicateArray0[4] = predicate0;
       AnyPredicate<Object> anyPredicate0 = new AnyPredicate<Object>(predicateArray0);
       anyPredicate0.getPredicates();
-      PredicateUtils.identityPredicate((AnyPredicate<NullIsFalsePredicate>) anyPredicate0);
+      PredicateUtils.identityPredicate((AnyPredicate<Object>) anyPredicate0);
       Predicate<Object> predicate2 = PredicateUtils.truePredicate();
       PredicateUtils.anyPredicate((Predicate<? super AndPredicate<Integer>>[]) predicateArray0);
       PredicateUtils.notNullPredicate();
@@ -746,7 +746,7 @@ public class PredicateUtils_ESTest extends PredicateUtils_ESTest_scaffolding {
       PredicateUtils.nullIsFalsePredicate((Predicate<? super Boolean>) predicate2);
       PredicateUtils.eitherPredicate((Predicate<? super NotPredicate<NonePredicate>>) predicate0, (Predicate<? super NotPredicate<NonePredicate>>) predicate1);
       IdentityPredicate<Integer> identityPredicate0 = (IdentityPredicate<Integer>) mock(IdentityPredicate.class, new ViolatedAssumptionAnswer());
-      PredicateUtils.equalPredicate((IdentityPredicate<OnePredicate>) identityPredicate0);
+      PredicateUtils.equalPredicate((IdentityPredicate<Integer>) identityPredicate0);
       PredicateUtils.uniquePredicate();
       PredicateUtils.orPredicate((Predicate<? super AllPredicate<NotNullPredicate>>) predicate1, (Predicate<? super AllPredicate<NotNullPredicate>>) predicate0);
       PredicateUtils.neitherPredicate((Predicate<? super FalsePredicate<Boolean>>) predicate1, (Predicate<? super FalsePredicate<Boolean>>) predicate1);

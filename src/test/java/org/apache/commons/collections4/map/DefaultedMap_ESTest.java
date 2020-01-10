@@ -245,8 +245,10 @@ public class DefaultedMap_ESTest extends DefaultedMap_ESTest_scaffolding {
       DefaultedMap<Predicate<Object>, Object> defaultedMap3 = new DefaultedMap<Predicate<Object>, Object>(defaultedMap1);
       Factory<InstanceofPredicate> factory0 = ConstantFactory.constantFactory(instanceofPredicate0);
       Transformer<Object, InstanceofPredicate> transformer0 = FactoryTransformer.factoryTransformer((Factory<? extends InstanceofPredicate>) factory0);
-      Map<Predicate<Object>, Object> map0 = DefaultedMap.defaultedMap((Map<Predicate<Object>, Object>) defaultedMap3, (Transformer<? super Predicate<Object>, ?>) transformer0);
-      DefaultedMap<Predicate<Object>, Object> defaultedMap4 = DefaultedMap.defaultedMap(map0, (Factory<?>) factory0);
+      Map<Predicate<Object>, Object> defaultedMap32 = (Map<Predicate<Object>, Object>) defaultedMap3;
+	Transformer<Object, ?> transformer02 = (Transformer<Object, ?>) transformer0;
+	Map<Predicate<Object>, Object> map0 = DefaultedMap.defaultedMap(defaultedMap32, predicate0);
+      DefaultedMap<Predicate<Object>, Object> defaultedMap4 = DefaultedMap.defaultedMap(map0, predicate0);
       DefaultedMap<Predicate<Object>, Object> defaultedMap5 = new DefaultedMap<Predicate<Object>, Object>(defaultedMap4, transformer0);
       DefaultedMap<Closure<Object>, Object> defaultedMap6 = new DefaultedMap<Closure<Object>, Object>(defaultedMap1);
       LinkedList<InstanceofPredicate> linkedList0 = new LinkedList<InstanceofPredicate>();

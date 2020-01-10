@@ -260,10 +260,10 @@ public class PredicatedMap_ESTest extends PredicatedMap_ESTest_scaffolding {
       Integer integer0 = new Integer((-3184));
       Boolean boolean0 = predicateTransformer0.transform(integer0);
       hashMap0.putIfAbsent(instanceofPredicate0, boolean0);
-      Predicate<Object> predicate0 = ExceptionPredicate.exceptionPredicate();
       // Undeclared exception!
       try { 
-        PredicatedMap.predicatedMap((Map<Boolean, AbstractMap.SimpleEntry<HashMap, AbstractMap.SimpleEntry>>) hashMap0, (Predicate<? super Boolean>) predicate0, (Predicate<? super AbstractMap.SimpleEntry<HashMap, AbstractMap.SimpleEntry>>) predicate0);
+        Map<Predicate<Object>,Boolean> hashMap02 = (Map<Predicate<Object>,Boolean>) hashMap0;
+		PredicatedMap.predicatedMap(hashMap02, ExceptionPredicate.exceptionPredicate(), ExceptionPredicate.exceptionPredicate());
         fail("Expecting exception: RuntimeException");
       
       } catch(RuntimeException e) {

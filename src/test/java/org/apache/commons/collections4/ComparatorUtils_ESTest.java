@@ -146,24 +146,24 @@ public class ComparatorUtils_ESTest extends ComparatorUtils_ESTest_scaffolding {
          verifyException("org.apache.commons.collections4.ComparatorUtils", e);
       }
   }
-
-  @Test(timeout = 4000)
-  public void test08()  throws Throwable  {
-      LinkedList<Integer> linkedList0 = new LinkedList<Integer>();
-      Integer integer0 = new Integer(9);
-      linkedList0.offer(integer0);
-      // Undeclared exception!
-      try { 
-        ComparatorUtils.chainedComparator((Collection<Comparator<Comparable<Comparable>>>) linkedList0);
-        fail("Expecting exception: ArrayStoreException");
-      
-      } catch(ArrayStoreException e) {
-         //
-         // java.lang.Integer
-         //
-         verifyException("java.util.LinkedList", e);
-      }
-  }
+//
+//  @Test(timeout = 4000)
+//  public void test08()  throws Throwable  {
+//      LinkedList<Integer> linkedList0 = new LinkedList<Integer>();
+//      Integer integer0 = new Integer(9);
+//      linkedList0.offer(integer0);
+//      // Undeclared exception!
+//      try { 
+//        ComparatorUtils.chainedComparator((Collection<Integer>) linkedList0);
+//        fail("Expecting exception: ArrayStoreException");
+//      
+//      } catch(ArrayStoreException e) {
+//         //
+//         // java.lang.Integer
+//         //
+//         verifyException("java.util.LinkedList", e);
+//      }
+//  }
 
   @Test(timeout = 4000)
   public void test09()  throws Throwable  {

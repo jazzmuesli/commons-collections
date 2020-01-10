@@ -198,7 +198,8 @@ public class PredicatedSet_ESTest extends PredicatedSet_ESTest_scaffolding {
       linkedHashSet0.add("eX`f_U");
       predicatedSet0.removeAll(linkedHashSet0);
       predicatedSet0.equals((Object) null);
-      PredicatedSet.predicatedSet((Set<LinkedHashSet<LinkedHashSet>>) predicatedSet0, (Predicate<? super LinkedHashSet<LinkedHashSet>>) predicate0);
+      Set<String> predicatedSet02 = (Set<String>) predicatedSet0;
+	PredicatedSet.predicatedSet(predicatedSet02, predicate0);
       LinkedHashSet<Object> linkedHashSet1 = new LinkedHashSet<Object>();
       PredicatedSet<Object> predicatedSet1 = new PredicatedSet<Object>(linkedHashSet1, predicate0);
       predicatedSet1.hashCode();

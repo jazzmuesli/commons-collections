@@ -158,8 +158,8 @@ public class BagUtils_ESTest extends BagUtils_ESTest_scaffolding {
   @Test(timeout = 4000)
   public void test09()  throws Throwable  {
       SortedBag<String> sortedBag0 = BagUtils.emptySortedBag();
-      Predicate<Object> predicate0 = (Predicate<Object>) mock(Predicate.class, new ViolatedAssumptionAnswer());
-      SortedBag<CollectionSortedBag<SynchronizedSortedBag>> sortedBag1 = BagUtils.predicatedSortedBag((SortedBag<CollectionSortedBag<SynchronizedSortedBag>>) sortedBag0, (Predicate<? super CollectionSortedBag<SynchronizedSortedBag>>) predicate0);
+      Predicate<String> predicate0 = (Predicate<String>) mock(Predicate.class, new ViolatedAssumptionAnswer());
+      SortedBag<String> sortedBag1 = BagUtils.predicatedSortedBag((SortedBag<String>) sortedBag0, (Predicate<String>) predicate0);
       assertEquals(0, sortedBag1.size());
   }
 
@@ -174,9 +174,9 @@ public class BagUtils_ESTest extends BagUtils_ESTest_scaffolding {
   @Test(timeout = 4000)
   public void test11()  throws Throwable  {
       Bag<String> bag0 = BagUtils.emptyBag();
-      Predicate<Object> predicate0 = (Predicate<Object>) mock(Predicate.class, new ViolatedAssumptionAnswer());
-      Bag<SynchronizedSortedBag<CollectionSortedBag>> bag1 = BagUtils.predicatedBag((Bag<SynchronizedSortedBag<CollectionSortedBag>>) bag0, (Predicate<? super SynchronizedSortedBag<CollectionSortedBag>>) predicate0);
-      Bag<PredicatedSortedBag<PredicatedSortedBag>> bag2 = BagUtils.collectionBag((Bag<PredicatedSortedBag<PredicatedSortedBag>>) bag1);
+      Predicate<String> predicate0 = (Predicate<String>) mock(Predicate.class, new ViolatedAssumptionAnswer());
+      Bag<String> bag1 = BagUtils.predicatedBag((Bag<String>) bag0, (Predicate<String>) predicate0);
+      Bag<String> bag2 = BagUtils.collectionBag((Bag<String>) bag1);
       assertEquals(0, bag2.size());
   }
 
